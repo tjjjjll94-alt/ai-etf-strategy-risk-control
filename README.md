@@ -87,6 +87,18 @@ streamlit run app/streamlit_app.py
 http://localhost:8501
 ```
 
+## 可视化结果
+
+### MA20均线策略与基准
+
+![MA20均线策略回测结果](reports/figures/510300_ma20_backtest.png)
+
+### 60日动量Top2策略与基准
+
+![60日动量策略回测结果](reports/figures/momentum_top2_backtest.png)
+
+图表展示策略净值、历史回撤以及相对于510300基准的表现差异。
+
 ## 数据来源
 
 历史行情数据通过AkShare获取。原始数据、清洗数据和回测结果均保存在项目目录中，便于复现和检查。
