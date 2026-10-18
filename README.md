@@ -87,6 +87,24 @@ streamlit run app/streamlit_app.py
 http://localhost:8501
 ```
 
+## 复现流程
+
+首次运行时，建议按照以下顺序执行脚本：
+
+```text
+1. scripts/download_all_etfs.py
+2. scripts/clean_etf_data.py
+3. scripts/calculate_momentum.py
+4. scripts/create_momentum_signal.py
+5. scripts/backtest_momentum.py
+6. scripts/backtest_momentum_vol_filter.py
+7. scripts/create_ml_features.py
+8. scripts/train_logistic_model.py
+9. scripts/backtest_logistic_strategy.py
+```
+
+原始行情和中间计算结果被`.gitignore`排除，以避免仓库过大。运行上述脚本后，数据会重新生成到`data/`目录，随后即可启动Streamlit看板。
+
 ## 可视化结果
 
 ### MA20均线策略与基准
