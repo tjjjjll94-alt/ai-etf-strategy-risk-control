@@ -1,0 +1,7 @@
+akshare==1.19.1
+pandas
+numpy
+scikit-learn
+matplotlib
+plotly
+streamlit

@@ -1,0 +1,31 @@
+# Python缓存
+__pycache__/
+*.py[cod]
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# PyCharm配置
+.idea/
+
+# 本地临时文件
+work/tmp/
+*.log
+
+# 原始行情数据和中间结果
+data/raw/*.csv
+data/processed/*.csv
+data/processed/splits/*.csv
+
+# 已整理前的旧脚本目录
+work/
+
+# Streamlit本地配置和缓存
+.streamlit/secrets.toml
+.streamlit/cache/
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
